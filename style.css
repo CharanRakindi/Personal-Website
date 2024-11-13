@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
-    background-color: #000000; /* Deep black background */
-    color: #FFFFFF;            /* White text for contrast */
+    background-color: #FFFFFF; /* White background for a clean look */
+    color: #000000;            /* Black text for high readability */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,56 +10,60 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #111111; /* Slightly lighter black for distinction */
-    color: #FFFFFF;
+    background-color: #FFFFFF; /* Match body for seamless appearance */
+    color: #000000;
     padding: 20px;
     text-align: center;
+    border-bottom: 1px solid #E0E0E0; /* Subtle border for separation */
 }
 
 /* Links Styling */
 a {
-    color: #1E90FF;            /* Bright blue for high contrast on black */
+    color: #0071e3;            /* Apple’s blue for links */
     text-decoration: none;
 }
 
 a:hover {
-    color: #FF8C00;            /* Orange for hover effect */
+    color: #005bb5;            /* Slightly darker blue for hover effect */
 }
 
 /* Section Styling */
 section {
-    background-color: #111111; /* Slightly lighter black for distinct sections */
+    background-color: #FFFFFF; /* White background for consistency */
     padding: 20px;
     border-radius: 8px;
     margin: 15px;
-    color: #F5F5F5;            /* Light grey for readability */
+    color: #000000;            /* Black text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 /* Heading Styling */
 h1, h2, h3, h4, h5, h6 {
-    color: #FFFFFF;            /* Ensure headings remain visible */
+    color: #000000;            /* Ensure headings are black */
 }
 
 /* Button Styling */
 button {
-    background-color: #1E90FF; /* Bright blue button */
+    background-color: #0071e3; /* Blue button, similar to Apple’s style */
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #FF8C00; /* Orange on hover for contrast */
+    background-color: #005bb5; /* Darker blue on hover */
 }
 
 /* Footer Styling */
 footer {
-    background-color: #000000; /* Same as body for a seamless look */
-    color: #888888;            /* Light grey for footer text */
+    background-color: #FFFFFF; /* White background to match page */
+    color: #666666;            /* Subtle grey for footer text */
     text-align: center;
     padding: 10px 0;
+    border-top: 1px solid #E0E0E0; /* Subtle top border for separation */
 }
 
 /* Responsive Styling */
