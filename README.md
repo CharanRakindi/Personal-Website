@@ -1,5 +1,3 @@
-Here’s a professional README template for your personal website hosted on Vercel:
-
 Charan Babu Rakindi - Personal Website
 
 Welcome to my personal website! This site is a minimalistic showcase of my background, projects, and skills, with a focus on my passion for technology. It includes information about my professional journey, including my LinkedIn profile and details about the app I created, We Charge.
