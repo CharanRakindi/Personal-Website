@@ -1,62 +1,75 @@
-/* General reset */
-* {
+/* General Body Styling */
+body {
+    background-color: #000000; /* Deep black background */
+    color: #FFFFFF;            /* White text for contrast */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
     line-height: 1.6;
 }
 
+/* Header Styling */
 header {
+    background-color: #111111; /* Slightly lighter black for distinction */
+    color: #FFFFFF;
+    padding: 20px;
     text-align: center;
-    padding: 2rem;
-    background-color: #333;
-    color: #fff;
 }
 
-nav {
-    text-align: center;
-    padding: 1rem;
-    background-color: #444;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 1rem;
+/* Links Styling */
+a {
+    color: #1E90FF;            /* Bright blue for high contrast on black */
     text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline;
+a:hover {
+    color: #FF8C00;            /* Orange for hover effect */
 }
 
+/* Section Styling */
 section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #fff;
+    background-color: #111111; /* Slightly lighter black for distinct sections */
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    color: #F5F5F5;            /* Light grey for readability */
 }
 
-h2 {
-    color: #333;
-    margin-bottom: 0.5rem;
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;            /* Ensure headings remain visible */
 }
 
-.project {
-    margin-top: 1rem;
+/* Button Styling */
+button {
+    background-color: #1E90FF; /* Bright blue button */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #FF8C00; /* Orange on hover for contrast */
+}
+
+/* Footer Styling */
 footer {
+    background-color: #000000; /* Same as body for a seamless look */
+    color: #888888;            /* Light grey for footer text */
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9rem;
+    padding: 10px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
 }
