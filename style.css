@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
-    background-color: #FFFFFF; /* White background for a clean look */
-    color: #000000;            /* Black text for high readability */
+    background-color: #FFFFFF;
+    color: #000000;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,70 +10,90 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #FFFFFF; /* Match body for seamless appearance */
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
     color: #000000;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #E0E0E0; /* Subtle border for separation */
 }
 
-/* Links Styling */
-a {
-    color: #0071e3;            /* Apple’s blue for links */
+/* Navigation Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #0071e3;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
-    color: #005bb5;            /* Slightly darker blue for hover effect */
+.nav-links a:hover {
+    color: #005bb5;
 }
 
 /* Section Styling */
 section {
-    background-color: #FFFFFF; /* White background for consistency */
-    padding: 20px;
+    background-color: #FFFFFF;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin: 15px;
-    color: #000000;            /* Black text */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 /* Heading Styling */
-h1, h2, h3, h4, h5, h6 {
-    color: #000000;            /* Ensure headings are black */
-}
-
-/* Button Styling */
-button {
-    background-color: #0071e3; /* Blue button, similar to Apple’s style */
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #005bb5; /* Darker blue on hover */
+h1 {
+    color: #000000;
+    font-size: 1.8em;
+    margin-top: 0;
 }
 
 /* Footer Styling */
 footer {
-    background-color: #FFFFFF; /* White background to match page */
-    color: #666666;            /* Subtle grey for footer text */
+    background-color: #FFFFFF;
+    color: #666666;
     text-align: center;
     padding: 10px 0;
-    border-top: 1px solid #E0E0E0; /* Subtle top border for separation */
+    border-top: 1px solid #E0E0E0;
 }
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    header, section, footer {
-        padding: 15px;
-        margin: 10px;
+    nav {
+        flex-direction: column;
     }
 
-    h1 {
-        font-size: 1.8em;
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
