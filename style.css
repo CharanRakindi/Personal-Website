@@ -72,6 +72,16 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+/* Link Styling */
+a {
+    color: #0071e3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #005bb5;
+}
 
 /* Heading Styling */
 h1 {
